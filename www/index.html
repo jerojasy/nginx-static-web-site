@@ -1,1 +1,113 @@
-<h2>Hello from Nginx
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" type="text/javascript" src="scripts.js"></script>
+    <title>Arma tu Plan</title>
+</head>
+<body>
+            <!-- MODAL -->
+            <div class="modal" id="myModal">
+                <div class="rrss">
+                    <h3>Navegación Libre</h3>
+                    <h5>Por comprar internet tienes navegación
+                        libre y costo adicional en:</h5>
+                        <div class="rs-iconmodal">
+                            <img src="img/facebookicon.png" width="25px">
+                            <img src="img/whatsappicon.png" width="25px">
+                            <img src="img/messengericon.png" width="25px">
+                            <img src="img/instagramicon.png" width="25px">
+                            <img src="img/twittericon.png" width="25px">
+                        </div>
+                    <h6>Facebook, WhatsApp, Messenger, Instagram y Twitter.</h6>
+                    <div class="btn-modal"><button class="btnmodal" onclick="window.location.href='/confirmacion.html'">Entendido</button></div>
+                </div>
+            </div>
+    <main>
+        <!-- HEADER -->
+        <div class="content">
+            <header class="app-header">
+                <div class="container">
+                        <img src="img/movistarlogo.png" width="150px" class="logo">
+                </div>
+            </header>
+            <img src="img/planes.jpg" width="100%">
+        </div>
+        <!-- CONTENIDO -->
+        <div class="vigencia"><p>Elige tu vigencia</p></div>
+        <div class="grid container">
+            <div class="plan">
+                <button class="button">
+                    <p>30 días</p>
+                </button>
+                <button class="button">
+                    <p>15 días</p>
+                </button>
+                <button class="button">
+                    <p>7 días</p>
+                </button>
+                <button class="button">
+                    <p>1 día</p>
+                </button>
+            </div><br>
+        </div>
+
+        <div class="internet"><p>Internet</p></div>
+        <div class="grid container">
+            <div class="plan">
+                <button class="button">
+                    <p>GB Libres</p>
+                </button>
+                <button class="button">
+                    <p>10 GB</p>
+                </button>
+                <button class="button">
+                    <p>7 GB</p>
+                </button>
+                <button class="button">
+                    <p>3 GB</p>
+                </button>
+            </div><br>
+        </div>
+
+        <div class="minutos"><p>Minutos todo destino</p></div>
+        <div class="grid container">
+            <div class="plan">
+                <button class="button">
+                    <p>Min Libres</p>
+                </button>
+                <button class="button">
+                    <p>300 Min</p>
+                </button>
+                <button class="button">
+                    <p>250 Min</p>
+                </button>
+                <button class="button">
+                    <p>100 Min</p>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- TOTAL COMPRA -->
+        <div class="footer">
+            <div class="balance"><p>Tu saldo actual <span style="color: #65c810;">$7.000</span></p></div>
+            <div class="price"><p>Precio de Bolsa:</p>
+            <p style="font-size: 20px;">$ - - - -</p></div>
+            <div class="btn-footer"><button class="btnbuy" id="btnbuy" onclick="myFunction()">¡Lo quiero!</button></div>
+        </div>
+        <div class="redirect">
+            <a href="https://ww2.movistar.cl/sucursal-virtual/">¿Estás buscando otros servicios? | <strong>ingresa aquí</strong></a><img src="img/Flecha_gris.png" width="15px">
+        </div>
+    </main>
+</body>
+</html>
