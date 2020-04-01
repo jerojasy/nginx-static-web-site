@@ -16,7 +16,8 @@ body {
 }
 
 .logo {
-    max-width: 150px;
+    width: 50%;
+    max-width: 50%;
 }
 
 /* ARMA TU PLAN */
