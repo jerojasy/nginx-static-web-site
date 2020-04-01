@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="viewport" content="width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
@@ -34,7 +34,7 @@
             </div>
     <main>
         <!-- HEADER -->
-        <div class="content">
+        <div class="banner">
             <header class="app-header">
                 <div class="container">
                         <img src="img/movistarlogo.png" class="logo">
@@ -43,27 +43,28 @@
             <img src="img/planes.jpg" width="100%">
         </div>
         <!-- CONTENIDO -->
-        <div class="vigencia"><p>Elige tu vigencia</p></div>
-        <div class="grid container">
-            <div class="plan">
-                <button class="button">
-                    <p>30 días</p>
-                </button>
-                <button class="button">
-                    <p>15 días</p>
-                </button>
-                <button class="button">
-                    <p>7 días</p>
-                </button>
-                <button class="button">
-                    <p>1 día</p>
-                </button>
-            </div><br>
-        </div>
+        <div class="content" id="content">
+            <div class="vigencia"><p>Elige tu vigencia</p></div>
+                <div class="grid container">
+                    <div class="plan" onclick="active()">
+                        <button class="button active">
+                            <p>30 días</p>
+                        </button>
+                        <button class="button">
+                            <p>15 días</p>
+                        </button>
+                        <button class="button">
+                            <p>7 días</p>
+                        </button>
+                        <button class="button">
+                            <p>1 día</p>
+                        </button>
+                    </div><br>
+            </div>
 
         <div class="internet"><p>Internet</p></div>
         <div class="grid container">
-            <div class="plan">
+            <div class="plan" onclick="active()">
                 <button class="button">
                     <p>GB Libres</p>
                 </button>
@@ -81,7 +82,7 @@
 
         <div class="minutos"><p>Minutos todo destino</p></div>
         <div class="grid container">
-            <div class="plan">
+            <div class="plan" onclick="active()">
                 <button class="button">
                     <p>Min Libres</p>
                 </button>
@@ -96,14 +97,14 @@
                 </button>
             </div>
         </div>
-
+    </div>
 
         <!-- TOTAL COMPRA -->
         <div class="footer">
             <div class="balance"><p>Tu saldo actual <span style="color: #65c810;">$7.000</span></p></div>
             <div class="price"><p>Precio de Bolsa:</p>
             <p style="font-size: 20px;">$ - - - -</p></div>
-            <div class="btn-footer"><button class="btnbuy" id="btnbuy" onclick="myFunction()">¡Lo quiero!</button></div>
+            <div class="btn-footer"><button class="btnbuy" id="btnbuy" name="btnbuy" onclick="myFunction()" disabled>¡Lo quiero!</button></div>
         </div>
         <div class="redirect">
             <a href="https://ww2.movistar.cl/sucursal-virtual/">¿Estás buscando otros servicios? | <strong>ingresa aquí</strong></a><img src="img/Flecha_gris.png" width="15px">

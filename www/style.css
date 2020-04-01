@@ -35,6 +35,7 @@ body {
 
 .vigencia, .internet, .minutos{
     padding-left: 23px;
+    text-align: left;
 }
 
 .app-header .container{
@@ -312,5 +313,19 @@ margin: 5px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     color: #727272;
+
+}
+
+/* Estilos para Tablet */
+@media only screen and(min-width: 768px) and (max-width : 940px){
+
+    /* width: 600px; */
+
+}
+
+/* Estilos para Smartphones */
+@media only screen and(min-width: 400px) and (max-width : 767px){
+
+    /* width: 400px; */
 
 }
