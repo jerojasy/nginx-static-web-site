@@ -7,9 +7,16 @@ function myFunction() {
 
 // DESACTIVAR BOTON "LO QUIERO"
 
-  function active() {
+function active() {
+  var vigencia= document.querySelector("input[name=vigencia]:checked");
+  var internet = document.querySelector("input[name=internet]:checked");
+  var minutos = document.querySelector("input[name=minutos]:checked");
+  if(vigencia&&internet||minutos){
     document.getElementById('btnbuy').disabled = false;
-  };
+  }else{
+    document.getElementById('btnbuy').disabled = true;
+  }
+}
 
 // DESELECCIONAR BOTON INTERNET
 
