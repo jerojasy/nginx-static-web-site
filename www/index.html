@@ -46,55 +46,43 @@
         <div class="content" id="content">
             <div class="vigencia"><p>Elige tu vigencia</p></div>
                 <div class="grid container">
-                    <div class="plan" onclick="active()">
-                        <button class="button active">
-                            <p>30 días</p>
-                        </button>
-                        <button class="button">
-                            <p>15 días</p>
-                        </button>
-                        <button class="button">
-                            <p>7 días</p>
-                        </button>
-                        <button class="button">
-                            <p>1 día</p>
-                        </button>
+                    <div class="plan">                
+                        <input type="radio" id="radio-vigencia1" name="vigencia" value="30 dias" checked>
+                            <label for="radio-vigencia1">30 días</label>
+                        <input type="radio" id="radio-vigencia2" name="vigencia" value="15 dias">
+                            <label for="radio-vigencia2">15 días</label>
+                        <input type="radio" id="radio-vigencia3" name="vigencia" value="7 dias">
+                            <label for="radio-vigencia3">7 días</label>
+                        <input type="radio" id="radio-vigencia4" name="vigencia" value="1 dia">
+                            <label for="radio-vigencia4">1 día</label>
                     </div><br>
             </div>
 
         <div class="internet"><p>Internet</p></div>
         <div class="grid container">
             <div class="plan" onclick="active()">
-                <button class="button">
-                    <p>GB Libres</p>
-                </button>
-                <button class="button">
-                    <p>10 GB</p>
-                </button>
-                <button class="button">
-                    <p>7 GB</p>
-                </button>
-                <button class="button">
-                    <p>3 GB</p>
-                </button>
+                <input type="radio" id="radio-internet1" name="internet" value="GB Libres">
+                    <label for="radio-internet1">GB Libres</label>
+                <input type="radio" id="radio-internet2" name="internet" value="10 GB">
+                    <label for="radio-internet2">10 GB</label>
+                <input type="radio" id="radio-internet3" name="internet" value="7 GB">
+                    <label for="radio-internet3">7 GB</label>
+                <input type="radio" id="radio-internet4" name="internet" value="3 GB">
+                    <label for="radio-internet4">3 GB</label>
             </div><br>
         </div>
 
         <div class="minutos"><p>Minutos todo destino</p></div>
         <div class="grid container">
             <div class="plan" onclick="active()">
-                <button class="button">
-                    <p>Min Libres</p>
-                </button>
-                <button class="button">
-                    <p>300 Min</p>
-                </button>
-                <button class="button">
-                    <p>250 Min</p>
-                </button>
-                <button class="button">
-                    <p>100 Min</p>
-                </button>
+                <input type="radio" id="radio-minutos1" name="minutos" value="Min libres">
+                    <label for="radio-minutos1">Min libres</label>
+                <input type="radio" id="radio-minutos2" name="minutos" value="300 Min">
+                    <label for="radio-minutos2">300 Min</label>
+                <input type="radio" id="radio-minutos3" name="minutos" value="250 Min">
+                    <label for="radio-minutos3">250 Min</label>
+                <input type="radio" id="radio-minutos4" name="minutos" value="100 Min">
+                    <label for="radio-minutos4">100 Min</label>
             </div>
         </div>
     </div>
