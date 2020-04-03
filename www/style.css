@@ -402,7 +402,7 @@ margin: 5px;
 }
 
 /* Estilo para smartphones pequeños */
-@media (min-width: 320px) and (max-width: 359px){
+@media (min-width: 300px) and (max-width: 359px){
     .grid input[type=radio] + label {
         border: 2px #65c810 solid;
         padding: 8px;
