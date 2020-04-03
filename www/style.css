@@ -1,5 +1,31 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype'),
+        url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.eot');
+    src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold.woff2') format('woff2'),
+        url('fonts/Roboto-Bold.woff') format('woff'),
+        url('fonts/Roboto-Bold.ttf') format('truetype'),
+        url('fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 header {
     background-color:#00a9df;
+    height: 45px;
 }
 
 *{
@@ -10,22 +36,22 @@ header {
 
 html,
 body {
-    height: auto;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     color: #727272;
     font-weight: bold;
 }
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
-  }
 
 .logo {
     min-width: auto;
 }
 
 /* ARMA TU PLAN */
+
+.content {
+    position: relative;
+    height: calc(100% - 85px)
+}
 
 .container {
     width: auto;
@@ -104,12 +130,15 @@ input[name=minutos]:checked+label{
 .footer {
     margin-top: 10px;
     width: 100%;
-    height: 100px;
-    display: inline-block;
+    height: auto;
+    display: flex;
     background-color: #f6f6f6;
     box-shadow: 0px 0px 2px 0px rgba(189,189,189,1);
     font-size: 14px;
     bottom: 0;
+    position: fixed;
+
+    flex-flow: column nowrap;
 }
 
 .btnbuy {
@@ -148,8 +177,11 @@ input[name=minutos]:checked+label{
     width: 100%;
     text-align: center;
     background-color: #dddddd;
-    display: inline-flex;
-    bottom: 0;
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .redirect > a {
@@ -168,8 +200,9 @@ input[name=minutos]:checked+label{
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
+    z-index: 999999999999999;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -339,6 +372,19 @@ margin: 5px;
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* Estilo para Desktop */
+@media (min-width: 1200px) {
+  
+    .footer {
+        position: unset;
+    }
+
+    .redirect {
+        position: unset;
+    }
+    
+  }
 
 /* Estilos para Tablet */
 @media only screen and(min-width: 768px) and (max-width : 940px){
