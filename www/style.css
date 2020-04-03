@@ -94,15 +94,16 @@ input[type=radio] + label{
 }
 
 .grid input[type=radio] + label{
-    display: flex;
     border: 2px #65c810 solid;
-    padding: 12px;
+    padding: 8px;
     border-radius: 10px;
     text-align: center;
     justify-content: center;
     width: 100px;
     height: 50px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -185,7 +186,7 @@ input[name=minutos]:checked+label{
 }
 
 .redirect > a {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: normal;
     padding: 5px;
     text-decoration: none;
@@ -398,4 +399,26 @@ margin: 5px;
 
     /* width: 400px; */
 
+}
+
+/* Estilo para smartphones pequeños */
+@media (min-width: 370px) {
+    .grid input[type=radio] + label {
+        border: 2px #65c810 solid;
+        padding: 8px;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        width: 90px;
+        height: 45px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 }
