@@ -18,44 +18,13 @@ function active() {
   }
 }
 
-// DESELECCIONAR BOTON INTERNET
+// DESELECCIONAR RADIOBUTTON
+var era;
+var previo=null;
 
-function checki() {
-
-  if(!this.checked){
-this.checked=true;
-
-  }
- else if (this.checked){
-     e=document.getElementById("chk");
-     var a =document.createElement("input");
-     a.type="radio";
-     a.name="internet";
-     a.checked=true;
-     e.appendChild(a);
-     e.removeChild(a);
-
-     this.checked=false;
-  }
-};
-
-// DESELECCIONAR BOTON MINUTOS
-
-function checkm() {
-
-  if(!this.checked){
-this.checked=true;
-
-  }
- else if (this.checked){
-     e=document.getElementById("chk");
-     var a =document.createElement("input");
-     a.type="radio";
-     a.name="minutos";
-     a.checked=true;
-     e.appendChild(a);
-     e.removeChild(a);
-
-     this.checked=false;
-  }
-};
+function uncheckRadio(rbutton) {
+if(previo &&previo!=rbutton){previo.era=false;}
+if(rbutton.checked==true && rbutton.era==true){rbutton.checked=false;}
+rbutton.era=rbutton.checked;
+previo=rbutton;
+}

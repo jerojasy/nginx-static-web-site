@@ -8,6 +8,8 @@
 
     <link rel="icon" sizes="192x192" href="img/favicon.ico">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script language="JavaScript" type="text/javascript" src="scripts.js"></script>
@@ -61,13 +63,13 @@
         <div class="internet"><p>Internet</p></div>
         <div class="grid container">
             <div class="plan" onclick="active()" id="chk">
-                <input type="radio" id="radio-ilibre" name="internet" value="GB Libres" onclick="checki()">
+                <input type="radio" id="radio-ilibre" name="internet" value="GB Libres" onclick="uncheckRadio(this)">
                     <label for="radio-ilibre">GB Libres</label>
-                <input type="radio" id="radio-i10" name="internet" value="10 GB" onclick="checki()">
+                <input type="radio" id="radio-i10" name="internet" value="10 GB" onclick="uncheckRadio(this)">
                     <label for="radio-i10">10 GB</label>
-                <input type="radio" id="radio-i7" name="internet" value="7 GB" onclick="checki()">
+                <input type="radio" id="radio-i7" name="internet" value="7 GB" onclick="uncheckRadio(this)">
                     <label for="radio-i7">7 GB</label>
-                <input type="radio" id="radio-i3" name="internet" value="3 GB" onclick="checki()">
+                <input type="radio" id="radio-i3" name="internet" value="3 GB" onclick="uncheckRadio(this)">
                     <label for="radio-i3">3 GB</label>
             </div><br>
         </div>
@@ -75,13 +77,13 @@
         <div class="minutos"><p>Minutos todo destino</p></div>
         <div class="grid container">
             <div class="plan" onclick="active()" id="chk">
-                <input type="radio" id="radio-minlibre" name="minutos" value="Min libres" onclick="checkm()">
+                <input type="radio" id="radio-minlibre" name="minutos" value="Min libres" onclick="uncheckRadio(this)">
                     <label for="radio-minlibre">Min libres</label>
-                <input type="radio" id="radio-min300" name="minutos" value="300 Min" onclick="checkm()">
+                <input type="radio" id="radio-min300" name="minutos" value="300 Min" onclick="uncheckRadio(this)">
                     <label for="radio-min300">300 Min</label>
-                <input type="radio" id="radio-min250" name="minutos" value="250 Min" onclick="checkm()">
+                <input type="radio" id="radio-min250" name="minutos" value="250 Min" onclick="uncheckRadio(this)">
                     <label for="radio-min250">250 Min</label>
-                <input type="radio" id="radio-min100" name="minutos" value="100 Min" onclick="checkm()">
+                <input type="radio" id="radio-min100" name="minutos" value="100 Min" onclick="uncheckRadio(this)">
                     <label for="radio-min100">100 Min</label>
             </div>
         </div>
