@@ -227,13 +227,15 @@ input[name=minutos]:checked+label{
     top: 0;
     left: 0;
 
+    overflow-y: scroll;
+
     display: none;
 }
 
 .rrss {
     margin: auto;
     width: 70%;
-    height: 40%;
+    height: auto;
     background: white;
 }
 
@@ -422,7 +424,7 @@ margin: 5px;
 }
 
 /* Estilo para smartphones pequeños */
-@media (min-width: 320px) and (max-width: 360px){
+@media (max-width: 360px){
     .grid input[type=radio] + label {
         border: 2px #65c810 solid;
         padding: 8px;
@@ -474,5 +476,11 @@ margin: 5px;
 
     .nocredit > img {
         width: 15px;
+    }
+}
+
+@media (max-height: 500px){
+    .content#content{
+        padding: 0 0 200px 0;
     }
 }
