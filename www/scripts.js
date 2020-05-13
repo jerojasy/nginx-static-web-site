@@ -2,7 +2,11 @@
 // DESPLIEGUE MODAL
 
 function myFunction() {
-    document.getElementById("myModal").style.display = "flex";
+    document.getElementById("myModal-alerta").style.display = "flex";
+  };
+
+  function closemodal() {
+    document.getElementById("myModal-alerta").style.display = "none";
   };
 
 // DESACTIVAR BOTON "LO QUIERO"

@@ -271,6 +271,84 @@ input[name=minutos]:checked+label{
     text-align: center;
 }
 
+/* MODAL ALERTA */
+
+.modal-alerta {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999999999999999;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+    display: none;
+}
+
+.modal-alerta>.rrss {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    background: white;
+}
+
+.rrss>p {
+    color: #43a9f8;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-alerta>.rrss > h3 {
+    color: white;
+    background-color: #e9426d;
+    text-align: center;
+    padding: 10px;
+}
+
+.modal-alerta>.rrss > h5, h6{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn-modal>.btnmodal-alerta-volver {
+    font-family: 'Roboto', sans-serif;
+    background-color: #43a9f8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn-modal>.btnmodal-alerta-continuar {
+    font-family: 'Roboto', sans-serif;
+    color: #43a9f8;
+    background-color: transparent;
+    border: 2px #43a9f8 solid;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.modal-alerta>.btn-modal, .modal-alerta>.rs-iconmodal{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
 /* //////////CONFIRMACION.HTML/////////////// */
 
 .divcompra {
