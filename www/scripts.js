@@ -32,3 +32,10 @@ if(rbutton.checked==true && rbutton.era==true){rbutton.checked=false;}
 rbutton.era=rbutton.checked;
 previo=rbutton;
 }
+
+
+
+function startscroll() {
+  var elmnt = document.getElementById("planv");
+  elmnt.scrollIntoView("radio-vig1");
+  }

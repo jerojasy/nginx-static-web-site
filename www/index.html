@@ -15,7 +15,7 @@
     <script language="JavaScript" type="text/javascript" src="scripts.js"></script>
     <title>Arma tu Plan</title>
 </head>
-<body>
+<body onload="startscroll()">
             <!-- MODAL -->
             <div class="modal" id="myModal">
                 <div class="rrss">
@@ -78,7 +78,7 @@
         <div class="content" id="content">
             <div class="vigencia"><p>Elige tu vigencia</p></div>
                 <div class="grid container">
-                    <div class="plan">                
+                    <div class="plan" id="planv">                
                         <input type="radio" id="radio-vig30" name="vigencia" value="30 dias" checked>
                             <label for="radio-vig30">30 días</label>
                         <input type="radio" id="radio-vig15" name="vigencia" value="15 dias">
